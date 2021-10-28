@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/staffFrragment">
+
+    <fragment
+        android:id="@+id/staffFrragment"
+        android:name="com.softwareEng.Daycare.ui.StaffFrragment"
+        android:label="staff_frragment_fragment"
+        tools:layout="@layout/staff_frragment_fragment" />
+    <fragment
+        android:id="@+id/suppliers"
+        android:name="com.softwareEng.Daycare.ui.Suppliers"
+        android:label="suppliers_fragment"
+        tools:layout="@layout/suppliers_fragment" />
+    <fragment
+        android:id="@+id/kidsFragment"
+        android:name="com.softwareEng.Daycare.ui.KidsFragment"
+        android:label="kids_fragment"
+        tools:layout="@layout/kids_fragment" />
+    <fragment
+        android:id="@+id/payment"
+        android:name="com.softwareEng.Daycare.ui.Payment"
+        android:label="payment_fragment"
+        tools:layout="@layout/payment_fragment" />
+</navigation>
