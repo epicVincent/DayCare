@@ -6,6 +6,15 @@
     app:startDestination="@id/staffFrragment">
 
     <fragment
+        android:id="@+id/staffFrragment2"
+        android:name="com.softwareEng.Daycare.ui.StaffFrragment"
+        android:label="staff_frragment_fragment"
+        tools:layout="@layout/staff_frragment_fragment" >
+        <action
+            android:id="@+id/action_staffFrragment2_to_staffFrragment"
+            app:destination="@id/staffFrragment" />
+    </fragment>
+    <fragment
         android:id="@+id/staffFrragment"
         android:name="com.softwareEng.Daycare.ui.StaffFrragment"
         android:label="staff_frragment_fragment"
@@ -25,4 +34,9 @@
         android:name="com.softwareEng.Daycare.ui.Payment"
         android:label="payment_fragment"
         tools:layout="@layout/payment_fragment" />
+    <fragment
+        android:id="@+id/addStaff"
+        android:name="com.softwareEng.Daycare.AddStaff"
+        android:label="fragment_add_staff"
+        tools:layout="@layout/fragment_add_staff" />
 </navigation>

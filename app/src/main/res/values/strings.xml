@@ -12,5 +12,7 @@
     <string name="kids">Manage Kids</string>
     <string name="Payments">Payments</string>
     <string name="suppliers">Assets and Suppliers</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

@@ -4,9 +4,17 @@ public abstract class Person {
     protected String Surname;
     protected String FirstName;
     protected String LastName;
+    protected int id;
 //    String Residence;
 
+    public Person(String FirstName,String LastName,String Surname){
+        this.LastName =LastName;
+        this.Surname = Surname;
+        this.LastName = LastName;
+    }
+    public Person(){
 
+    }
     public String getSurname() {
         return Surname;
     }
@@ -29,5 +37,13 @@ public abstract class Person {
 
     public void setLastName(String lastName) {
         LastName = lastName;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
