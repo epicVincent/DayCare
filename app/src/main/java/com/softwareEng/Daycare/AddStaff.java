@@ -1,12 +1,15 @@
 package com.softwareEng.Daycare;
 
 import android.content.Context;
+import android.content.Intent;
 import android.database.SQLException;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -17,6 +20,7 @@ import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 
+import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textfield.TextInputLayout;
 
 import org.jetbrains.annotations.NotNull;
@@ -75,6 +79,7 @@ public class AddStaff extends Fragment {
         id = (TextInputLayout) view.findViewById(R.id.TiD);
         roles = (Spinner) view.findViewById(R.id.sRole);
         btnAddStaff = view.findViewById(R.id.btnAddStaff);
+        NavController navController = Navigation.findNavController(this.getActivity(),R.id.nav_host_fragment_content_admin_drawer);
         context = this.getContext();
         try {
 
@@ -114,6 +119,7 @@ public class AddStaff extends Fragment {
 
                 Staff staff = new Staff(context,mFirstName,mLastName,mSurname,mTelNo1,mTelNo2,mId, finalMRole);
                 staff.save();
+                Snackbar.make(view, "Details captured and staff has been registered successfully", Snackbar.LENGTH_LONG).show();
             }
         });
     }

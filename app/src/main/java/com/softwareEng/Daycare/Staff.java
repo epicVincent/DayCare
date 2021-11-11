@@ -17,6 +17,9 @@ public class Staff extends Person {
 
     public Staff(Context context,String firstName,String lastName,String surName, String telNo1, String telNo2,Role role,String username,String password,String NatId) {
         super(firstName,lastName,surName);
+        this.FirstName = firstName;
+        this.LastName = lastName;
+        this.Surname = surName;
         this.telNo1 = telNo1;
         this.telNo2 = telNo2;
         this.NatId = NatId;
